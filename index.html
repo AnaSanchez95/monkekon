@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Monkekon game</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="./JS/script.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>Monkekon game</h1>
+        </header>        
+
+        <section id="seleccionar-mascota">
+            <h2>Seleccione la mascota</h2>
+
+            <label for="hipodoge">Hipodoge</label>
+            <input type="radio" name="mascota" id="hipodoge">
+          
+            <label for="capipepo">Capipepo</label>
+            <input type="radio" name="mascota" id="capipepo">
+            
+            <label for="ratigueya">Ratigueya</label>
+            <input type="radio" name="mascota" id="ratigueya">
+           
+            <!-- <label for="langostelvis">Langostelvis</label>
+            <input type="radio" name="mascota" id="langostelvis">
+            
+            <label for="tucapalma">Tucapalma</label>
+            <input type="radio" name="mascota" id="tucapalma">
+            
+            <label for="pydos">Pydos</label>
+            <input type="radio" name="mascota" id="pydos"> -->
+            
+
+            <button id="btn-mascota">Elegir</button>
+        </section>
+
+        <section id="seleccionar-ataque">
+            <h2>Selecione el ataque</h2>
+
+            <p>Tu mascota <span id="mascota-jugador"></span> tiene <span id="vida-jugador"></span> vidas</p>
+            <p>La mascota <span id="mascota-enemigo"></span> del enemigo tiene <span id="vida-enemigo"></span> vidas</p>
+
+            <p>
+                <button id="btn-fuego">Fuego</button>
+                <button id="btn-agua">Agua</button>
+                <button id="btn-tierra">Tierra</button>
+            </p>
+        </section>
+
+        <section id="mensajes">       
+
+        </section>
+
+        <section id="reiniciar">
+
+            <button id="btn-reiniciar">Reiniciar juego</button>
+        </section>
+
+        <footer>
+
+        </footer>
+        
+    </body>
+</html>
