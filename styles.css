@@ -1,0 +1,179 @@
+body {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(209, 232, 251);
+    box-sizing: content-box;
+}
+
+header {    
+    margin: 0;
+    height: min-content;
+}
+
+.titulo {
+    
+    color: cadetblue;
+    font-size: 140px;
+    text-align: center;
+    padding: 5px;
+}
+
+#seleccionar-mascota {
+    background-color:aliceblue;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 600px;
+    border-radius: 10px;
+    border-style:double;
+    border-color: rgb(25, 107, 179);
+    border-width: 5px;
+    
+}
+
+#titulo-mascota, #titulo-ataque{
+    font-size: 50px;
+    color: cadetblue;
+    margin: 15px;
+}
+
+#mascotas {
+display: flex;
+justify-content: center;
+gap: 20px;
+font-size: 20px;
+text-align: center;
+}
+
+.mascota {
+    background-color: rgb(171, 219, 219);
+    border-radius: 8px;
+    padding: 10px 30px;
+    height: 120px;
+}
+input {
+    display: none;
+}
+.img-mascota {
+    height: 120px;
+    width: auto;
+}
+
+#btn-mascota {
+    align-self: flex-start;
+    margin-top: 50px;
+    padding: 5px 30px;
+    background-color:cadetblue;
+    color: aliceblue;
+    font-weight: 700;
+    font-size: 17px;
+    border-radius: 8px;
+    margin-left: 220px;
+}
+
+#seleccionar-ataque {
+    font-size: 20px;
+    background-color:aliceblue;
+    padding: 20px;
+    width: 500px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border-radius: 10px;
+    border-style:double;
+    border-color: rgb(25, 107, 179);
+    border-width: 5px;
+}
+
+#texto-ataque {
+    text-align: center;
+}
+
+#mascota-jugador, #mascota-enemigo {
+    color: rgb(66, 43, 168);
+    font-weight: 700;
+}
+
+#vida-jugador, #vida-enemigo {
+    color: brown;
+    font-weight: 700;
+}
+
+#botones-ataques {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 0px;
+    
+}
+
+.boton-ataque {    
+    height: 40px;
+    width: 120px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+#btn-fuego {
+    background-color: bisque;
+}
+#btn-agua {
+    background-color: rgb(166, 252, 252);
+}
+#btn-tierra {
+    background-color: rgb(173, 222, 173);
+}
+
+#reiniciar {
+    margin: 10px;
+    text-align: center;
+}
+
+#btn-reiniciar {
+    height: 40px;
+    width: 180px;
+    background-color: rgb(171, 219, 219);
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+#mensajes {
+    display: flex;
+    flex-direction: column;    
+    align-items: center;
+   
+}
+
+#ataques {
+    display: flex;
+    gap: 25px;
+    margin-top: 20px;
+}
+
+#ataques div {
+    background-color: aliceblue;
+    width: 160px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#resultado-final {
+    background-color: rgb(171, 219, 219);
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    border-radius: 10px;
+    width: 400px;
+    margin: 10px;
+}
+
