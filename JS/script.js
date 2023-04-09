@@ -35,16 +35,42 @@ class Monkekon {
     constructor(nombre, foto, vida) {
         this.nombre = nombre;
         this.foto = foto;
-        this.vida = vida;        
+        this.vida = vida;
+        this.ataques = [];        
     }
 }
 
 let hipodoge = new Monkekon('Hipodoge', './assets/mokepons_mokepon_hipodoge_attack.png', 3);
 let capipepo = new Monkekon('Capipepo', './assets/mokepons_mokepon_capipepo_attack.png', 3);
 let ratigueya = new Monkekon('Ratigueya', './assets/mokepons_mokepon_ratigueya_attack.png', 3);
+
 // let langostelvis = new Monkekon('langostelvis', './assets/mokepons_mokepon_ratigueya_attack.png', 3);
 // let tucapalma = new Monkekon('tucapalma', './assets/mokepons_mokepon_ratigueya_attack.png', 3);
 // let pydos = new Monkekon('pydos', './assets/mokepons_mokepon_ratigueya_attack.png', 3);
+
+hipodoge.ataques.push(
+    {nombreAtaque: 'Agua', id: 'btn-agua'},
+    {nombreAtaque: 'Agua', id: 'btn-agua'},
+    {nombreAtaque: 'Agua', id: 'btn-agua'},
+    {nombreAtaque: 'Tierra', id: 'btn-tierra'},
+    {nombreAtaque: 'Fuego', id: 'btn-fuego'},
+)
+
+capipepo.ataques.push(
+    {nombreAtaque: 'Tierra', id: 'btn-tierra'},
+    {nombreAtaque: 'Tierra', id: 'btn-tierra'},
+    {nombreAtaque: 'Tierra', id: 'btn-tierra'},
+    {nombreAtaque: 'Agua', id: 'btn-agua'},
+    {nombreAtaque: 'Fuego', id: 'btn-fuego'},
+)
+
+ratigueya.ataques.push(
+    {nombreAtaque: 'Fuego', id: 'btn-fuego'},
+    {nombreAtaque: 'Fuego', id: 'btn-fuego'},
+    {nombreAtaque: 'Fuego', id: 'btn-fuego'},
+    {nombreAtaque: 'Agua', id: 'btn-agua'},
+    {nombreAtaque: 'Tierra', id: 'btn-tierra'},
+)
 
 monkekones.push(hipodoge, capipepo, ratigueya);
 
