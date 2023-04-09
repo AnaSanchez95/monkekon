@@ -3,9 +3,7 @@ const seccionMascota = document.getElementById('seleccionar-mascota');
 
 const btnMascota = document.getElementById('btn-mascota');
 
-const hipodoge = document.getElementById('hipodoge');
-const capipepo = document.getElementById('capipepo');
-const ratigueya = document.getElementById('ratigueya');
+
 
 const spanMascotaJugador = document.getElementById('mascota-jugador');
 const spanMascotaEnemigo = document.getElementById('mascota-enemigo');   
@@ -27,6 +25,7 @@ const seccionResultadoFinal = document.getElementById('resultado-final');
 const seccionReiniciar = document.getElementById('reiniciar');
 const btnReiniciar = document.getElementById('btn-reiniciar');
 
+let monkekones = [];
 let ataqueJugador;
 let ataqueEnemigo;
 let vidaJugador = 3;
@@ -39,6 +38,15 @@ class Monkekon {
         this.vida = vida;        
     }
 }
+
+let hipodoge = new Monkekon('Hipodoge', './assets/mokepons_mokepon_hipodoge_attack.png', 3);
+let capipepo = new Monkekon('Capipepo', './assets/mokepons_mokepon_capipepo_attack.png', 3);
+let ratigueya = new Monkekon('Ratigueya', './assets/mokepons_mokepon_ratigueya_attack.png', 3);
+// let langostelvis = new Monkekon('langostelvis', './assets/mokepons_mokepon_ratigueya_attack.png', 3);
+// let tucapalma = new Monkekon('tucapalma', './assets/mokepons_mokepon_ratigueya_attack.png', 3);
+// let pydos = new Monkekon('pydos', './assets/mokepons_mokepon_ratigueya_attack.png', 3);
+
+monkekones.push(hipodoge, capipepo, ratigueya);
 
 function iniciarJuego() {
     seccionAtaque.style.display = 'none';
@@ -59,6 +67,10 @@ function iniciarJuego() {
 }    
 
 function seleccionarMascotaJugador() {
+    const hipodoge = document.getElementById('hipodoge');
+    const capipepo = document.getElementById('capipepo');
+    const ratigueya = document.getElementById('ratigueya');
+
     seccionAtaque.style.display = 'block';
     seccionMascota.style.display = 'none';
 
@@ -201,9 +213,9 @@ function crearMensaje(resultado) {
     parrafoEnemigo.innerText = ataqueEnemigo;
     parrafoResultado.innerText = resultado;    
 
-     ataquesJugador.appendChild(parrafoJugador);
-     ataquesEnemigo.appendChild(parrafoEnemigo);
-     ataquesResultado.appendChild(parrafoResultado);
+    ataquesJugador.appendChild(parrafoJugador);
+    ataquesEnemigo.appendChild(parrafoEnemigo);
+    ataquesResultado.appendChild(parrafoResultado);
 }
 
 function mensajeFinal(resultado) {
