@@ -1,8 +1,3 @@
-let ataqueJugador;
-let ataqueEnemigo;
-let vidaJugador = 3;
-let vidaEnemigo = 3;
-
 const seccionAtaque = document.getElementById('seleccionar-ataque');
 const seccionMascota = document.getElementById('seleccionar-mascota');
 
@@ -32,6 +27,19 @@ const seccionResultadoFinal = document.getElementById('resultado-final');
 const seccionReiniciar = document.getElementById('reiniciar');
 const btnReiniciar = document.getElementById('btn-reiniciar');
 
+let ataqueJugador;
+let ataqueEnemigo;
+let vidaJugador = 3;
+let vidaEnemigo = 3;
+
+class Monkekon {
+    constructor(nombre, foto, vida) {
+        this.nombre = nombre;
+        this.foto = foto;
+        this.vida = vida;        
+    }
+}
+
 function iniciarJuego() {
     seccionAtaque.style.display = 'none';
     seccionReiniciar.style.display = 'none';
@@ -50,7 +58,7 @@ function iniciarJuego() {
     btnReiniciar.addEventListener('click', reiniciarJuego);
 }    
 
-function seleccionarMascotaJugador() {         
+function seleccionarMascotaJugador() {
     seccionAtaque.style.display = 'block';
     seccionMascota.style.display = 'none';
 
