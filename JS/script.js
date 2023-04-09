@@ -3,34 +3,34 @@ let ataqueEnemigo;
 let vidaJugador = 3;
 let vidaEnemigo = 3;
 
-let seccionAtaque = document.getElementById('seleccionar-ataque');
-let seccionMascota = document.getElementById('seleccionar-mascota');
+const seccionAtaque = document.getElementById('seleccionar-ataque');
+const seccionMascota = document.getElementById('seleccionar-mascota');
 
 const btnMascota = document.getElementById('btn-mascota');
 
-let hipodoge = document.getElementById('hipodoge');
-let capipepo = document.getElementById('capipepo');
-let ratigueya = document.getElementById('ratigueya');
+const hipodoge = document.getElementById('hipodoge');
+const capipepo = document.getElementById('capipepo');
+const ratigueya = document.getElementById('ratigueya');
 
-let spanMascotaJugador = document.getElementById('mascota-jugador');
-let spanMascotaEnemigo = document.getElementById('mascota-enemigo');   
+const spanMascotaJugador = document.getElementById('mascota-jugador');
+const spanMascotaEnemigo = document.getElementById('mascota-enemigo');   
 
-let spanVidasJugador = document.getElementById('vida-jugador');
-let spanVidasEnemigo = document.getElementById('vida-enemigo');
+const spanVidasJugador = document.getElementById('vida-jugador');
+const spanVidasEnemigo = document.getElementById('vida-enemigo');
 
-let seccionAtaques = document.getElementById('ataques');
-let ataquesJugador = document.getElementById('ataque-jugador');
-let ataquesEnemigo = document.getElementById('ataque-enemigo');
+const seccionAtaques = document.getElementById('ataques');
+const ataquesJugador = document.getElementById('ataque-jugador');
+const ataquesEnemigo = document.getElementById('ataque-enemigo');
 
-let btnFuego = document.getElementById('btn-fuego');
-let btnAgua = document.getElementById('btn-agua');
-let btnTierra = document.getElementById('btn-tierra');
+const btnFuego = document.getElementById('btn-fuego');
+const btnAgua = document.getElementById('btn-agua');
+const btnTierra = document.getElementById('btn-tierra');
 
-let ataquesResultado = document.getElementById('resultado');
-let seccionResultadoFinal = document.getElementById('resultado-final');
+const ataquesResultado = document.getElementById('resultado');
+const seccionResultadoFinal = document.getElementById('resultado-final');
 
-let seccionReiniciar = document.getElementById('reiniciar');
-let btnReiniciar = document.getElementById('btn-reiniciar');
+const seccionReiniciar = document.getElementById('reiniciar');
+const btnReiniciar = document.getElementById('btn-reiniciar');
 
 function iniciarJuego() {
     seccionAtaque.style.display = 'none';
